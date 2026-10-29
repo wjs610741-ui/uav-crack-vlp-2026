@@ -1,7 +1,7 @@
-# Reproducing the CHD-UNetR34 submission
+﻿# Reproducing the CHD-UNetR34 submission
 
 Leaderboard result: **mIoU 82.58**, Crack F1 80.65, Crack IoU 67.58,
-precision 79.63, recall 81.70, aAcc 97.70 (2026-10-29, rank 3/82).
+precision 79.63, recall 81.70, aAcc 97.70 (2026-10-29, rank 3/83).
 
 The submission is a probability average of **51 models** with four-way flip TTA,
 binarised at threshold **0.56**.
@@ -71,7 +71,7 @@ Predicted crack ratio on the official val set: **6.03%** (training GT: 6.17%).
 `uavcrack_onnx.zip` contains seven exports covering every architecture family,
 all with fixed input `(1, 3, 378, 672)` and output logits `(1, 1, 378, 672)`.
 Exports were verified against PyTorch (maximum absolute logit difference
-1.7e-5).
+1.3e-4).
 
 ## 6. Notes
 
