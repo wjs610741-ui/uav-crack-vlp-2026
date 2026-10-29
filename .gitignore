@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+UAV-Crack-dataset/
+runs/
+submission/
+*.pth
+*.pt
+*.zip
+.vscode/
+.idea/
+.DS_Store
