@@ -1,0 +1,797 @@
+{
+  "model_count": 51,
+  "ensemble": "51 models, four-flip TTA, threshold 0.56",
+  "leaderboard": {
+    "mIoU": 82.58,
+    "Crack_F1": 80.65,
+    "Crack_IoU": 67.58,
+    "Precision": 79.63,
+    "Recall": 81.7,
+    "aAcc": 97.7
+  },
+  "checkpoints": [
+    {
+      "file": "checkpoints/fold0_best.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": 0,
+      "epoch": 41,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.4315,
+        "Crack_F1": 77.7893,
+        "Crack_IoU": 63.6517,
+        "Crack_Precision": 76.1545,
+        "Crack_Recall": 79.4958,
+        "aAcc": 97.3411
+      }
+    },
+    {
+      "file": "checkpoints/uplus_fold0_best.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": 0,
+      "epoch": 41,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.5798,
+        "Crack_F1": 77.978,
+        "Crack_IoU": 63.9049,
+        "Crack_Precision": 76.8553,
+        "Crack_Recall": 79.134,
+        "aAcc": 97.3821
+      }
+    },
+    {
+      "file": "checkpoints/het_seg_b2_f0_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 0,
+      "epoch": 58,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.9308,
+        "Crack_F1": 75.878,
+        "Crack_IoU": 61.1318,
+        "Crack_Precision": 69.5162,
+        "Crack_Recall": 83.5216,
+        "aAcc": 96.8897
+      }
+    },
+    {
+      "file": "checkpoints/seed2_seg_f0_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 0,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.5561,
+        "Crack_F1": 75.3807,
+        "Crack_IoU": 60.4888,
+        "Crack_Precision": 68.4193,
+        "Crack_Recall": 83.9191,
+        "aAcc": 96.7894
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_f0_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_tiny",
+      "fold": 0,
+      "epoch": 40,
+      "ema": true,
+      "metrics": {
+        "mIoU": 81.1037,
+        "Crack_F1": 78.6852,
+        "Crack_IoU": 64.8603,
+        "Crack_Precision": 77.6961,
+        "Crack_Recall": 79.6998,
+        "aAcc": 97.4709
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_small_f0_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 0,
+      "epoch": 42,
+      "ema": true,
+      "metrics": {
+        "mIoU": 81.0903,
+        "Crack_F1": 78.7026,
+        "Crack_IoU": 64.8839,
+        "Crack_Precision": 76.3342,
+        "Crack_Recall": 81.2226,
+        "aAcc": 97.4253
+      }
+    },
+    {
+      "file": "checkpoints/seed2_small_f0_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 0,
+      "epoch": 32,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.6662,
+        "Crack_F1": 78.1596,
+        "Crack_IoU": 64.1491,
+        "Crack_Precision": 74.7274,
+        "Crack_Recall": 81.9221,
+        "aAcc": 97.3184
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_base_f0_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 0,
+      "epoch": 46,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.6905,
+        "Crack_F1": 78.1929,
+        "Crack_IoU": 64.1941,
+        "Crack_Precision": 74.7439,
+        "Crack_Recall": 81.9757,
+        "aAcc": 97.3219
+      }
+    },
+    {
+      "file": "checkpoints/seed2_base_f0_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 0,
+      "epoch": 36,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.5768,
+        "Crack_F1": 78.0309,
+        "Crack_IoU": 63.976,
+        "Crack_Precision": 74.8529,
+        "Crack_Recall": 81.4908,
+        "aAcc": 97.3124
+      }
+    },
+    {
+      "file": "checkpoints/fold1_best.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": 1,
+      "epoch": 48,
+      "ema": false,
+      "metrics": {
+        "mIoU": 79.782,
+        "Crack_F1": 77.1158,
+        "Crack_IoU": 62.7549,
+        "Crack_Precision": 74.1208,
+        "Crack_Recall": 80.3631,
+        "aAcc": 96.9719
+      }
+    },
+    {
+      "file": "checkpoints/uplus_fold1_best.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": 1,
+      "epoch": 41,
+      "ema": false,
+      "metrics": {
+        "mIoU": 79.9787,
+        "Crack_F1": 77.3391,
+        "Crack_IoU": 63.0512,
+        "Crack_Precision": 75.7602,
+        "Crack_Recall": 78.9853,
+        "aAcc": 97.0614
+      }
+    },
+    {
+      "file": "checkpoints/het_seg_b2_f1_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 1,
+      "epoch": 55,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.1354,
+        "Crack_F1": 75.0022,
+        "Crack_IoU": 60.0028,
+        "Crack_Precision": 68.0667,
+        "Crack_Recall": 83.5114,
+        "aAcc": 96.4658
+      }
+    },
+    {
+      "file": "checkpoints/seed2_seg_f1_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 1,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 77.9832,
+        "Crack_F1": 74.7722,
+        "Crack_IoU": 59.7089,
+        "Crack_Precision": 68.1833,
+        "Crack_Recall": 82.7708,
+        "aAcc": 96.4541
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_f1_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_tiny",
+      "fold": 1,
+      "epoch": 48,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.5821,
+        "Crack_F1": 78.1434,
+        "Crack_IoU": 64.1274,
+        "Crack_Precision": 77.0782,
+        "Crack_Recall": 79.2385,
+        "aAcc": 97.1859
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_small_f1_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 1,
+      "epoch": 38,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.4094,
+        "Crack_F1": 77.9453,
+        "Crack_IoU": 63.8609,
+        "Crack_Precision": 75.6759,
+        "Crack_Recall": 80.3549,
+        "aAcc": 97.113
+      }
+    },
+    {
+      "file": "checkpoints/seed2_small_f1_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 1,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.0273,
+        "Crack_F1": 77.5453,
+        "Crack_IoU": 63.3257,
+        "Crack_Precision": 71.8595,
+        "Crack_Recall": 84.2082,
+        "aAcc": 96.9039
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_base_f1_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 1,
+      "epoch": 48,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.0788,
+        "Crack_F1": 77.5719,
+        "Crack_IoU": 63.3612,
+        "Crack_Precision": 73.0565,
+        "Crack_Recall": 82.6824,
+        "aAcc": 96.9646
+      }
+    },
+    {
+      "file": "checkpoints/seed2_base_f1_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 1,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.2444,
+        "Crack_F1": 77.727,
+        "Crack_IoU": 63.5684,
+        "Crack_Precision": 75.2937,
+        "Crack_Recall": 80.3227,
+        "aAcc": 97.0775
+      }
+    },
+    {
+      "file": "checkpoints/fold2_best.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": 2,
+      "epoch": 35,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.21,
+        "Crack_F1": 77.5566,
+        "Crack_IoU": 63.3408,
+        "Crack_Precision": 75.5007,
+        "Crack_Recall": 79.7276,
+        "aAcc": 97.2195
+      }
+    },
+    {
+      "file": "checkpoints/uplus_fold2_best.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": 2,
+      "epoch": 38,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.3343,
+        "Crack_F1": 77.7482,
+        "Crack_IoU": 63.5968,
+        "Crack_Precision": 74.9482,
+        "Crack_Recall": 80.7657,
+        "aAcc": 97.2143
+      }
+    },
+    {
+      "file": "checkpoints/het_seg_b2_f2_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 2,
+      "epoch": 58,
+      "ema": true,
+      "metrics": {
+        "mIoU": 79.2905,
+        "Crack_F1": 76.4052,
+        "Crack_IoU": 61.8191,
+        "Crack_Precision": 71.0222,
+        "Crack_Recall": 82.671,
+        "aAcc": 96.9233
+      }
+    },
+    {
+      "file": "checkpoints/seed2_seg_f2_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 2,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.8416,
+        "Crack_F1": 75.8477,
+        "Crack_IoU": 61.0924,
+        "Crack_Precision": 68.9179,
+        "Crack_Recall": 84.3268,
+        "aAcc": 96.7639
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_f2_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_tiny",
+      "fold": 2,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.8774,
+        "Crack_F1": 78.4625,
+        "Crack_IoU": 64.5583,
+        "Crack_Precision": 76.408,
+        "Crack_Recall": 80.6307,
+        "aAcc": 97.3327
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_small_f2_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 2,
+      "epoch": 48,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.3893,
+        "Crack_F1": 77.8982,
+        "Crack_IoU": 63.7977,
+        "Crack_Precision": 72.7461,
+        "Crack_Recall": 83.8356,
+        "aAcc": 97.1334
+      }
+    },
+    {
+      "file": "checkpoints/seed2_small_f2_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 2,
+      "epoch": 47,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.5159,
+        "Crack_F1": 78.064,
+        "Crack_IoU": 64.0204,
+        "Crack_Precision": 73.0635,
+        "Crack_Recall": 83.7992,
+        "aAcc": 97.1622
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_base_f2_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 2,
+      "epoch": 48,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.5852,
+        "Crack_F1": 78.1139,
+        "Crack_IoU": 64.0877,
+        "Crack_Precision": 74.48,
+        "Crack_Recall": 82.1206,
+        "aAcc": 97.2271
+      }
+    },
+    {
+      "file": "checkpoints/seed2_base_f2_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 2,
+      "epoch": 37,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.5574,
+        "Crack_F1": 78.0306,
+        "Crack_IoU": 63.9756,
+        "Crack_Precision": 75.9431,
+        "Crack_Recall": 80.2362,
+        "aAcc": 97.2776
+      }
+    },
+    {
+      "file": "checkpoints/fold3_best.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": 3,
+      "epoch": 31,
+      "ema": false,
+      "metrics": {
+        "mIoU": 79.8654,
+        "Crack_F1": 77.2651,
+        "Crack_IoU": 62.9528,
+        "Crack_Precision": 74.8613,
+        "Crack_Recall": 79.8283,
+        "aAcc": 96.9453
+      }
+    },
+    {
+      "file": "checkpoints/uplus_fold3_best.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": 3,
+      "epoch": 41,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.009,
+        "Crack_F1": 77.4888,
+        "Crack_IoU": 63.2504,
+        "Crack_Precision": 74.2279,
+        "Crack_Recall": 81.0494,
+        "aAcc": 96.938
+      }
+    },
+    {
+      "file": "checkpoints/het_seg_b2_f3_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 3,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.6265,
+        "Crack_F1": 75.7273,
+        "Crack_IoU": 60.9364,
+        "Crack_Precision": 69.235,
+        "Crack_Recall": 83.5632,
+        "aAcc": 96.5168
+      }
+    },
+    {
+      "file": "checkpoints/seed2_seg_f3_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 3,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.3355,
+        "Crack_F1": 75.3442,
+        "Crack_IoU": 60.4418,
+        "Crack_Precision": 68.4526,
+        "Crack_Recall": 83.7788,
+        "aAcc": 96.4346
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_f3_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_tiny",
+      "fold": 3,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.8892,
+        "Crack_F1": 78.6342,
+        "Crack_IoU": 64.7911,
+        "Crack_Precision": 76.5965,
+        "Crack_Recall": 80.7833,
+        "aAcc": 97.1455
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_small_f3_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 3,
+      "epoch": 46,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.8002,
+        "Crack_F1": 78.5629,
+        "Crack_IoU": 64.6943,
+        "Crack_Precision": 74.9742,
+        "Crack_Recall": 82.5124,
+        "aAcc": 97.072
+      }
+    },
+    {
+      "file": "checkpoints/seed2_small_f3_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 3,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.3869,
+        "Crack_F1": 78.0787,
+        "Crack_IoU": 64.0403,
+        "Crack_Precision": 72.5316,
+        "Crack_Recall": 84.5446,
+        "aAcc": 96.9131
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_base_f3_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 3,
+      "epoch": 38,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.2933,
+        "Crack_F1": 77.902,
+        "Crack_IoU": 63.8028,
+        "Crack_Precision": 73.7853,
+        "Crack_Recall": 82.5051,
+        "aAcc": 96.9564
+      }
+    },
+    {
+      "file": "checkpoints/seed2_base_f3_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 3,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.462,
+        "Crack_F1": 78.0994,
+        "Crack_IoU": 64.0681,
+        "Crack_Precision": 74.8561,
+        "Crack_Recall": 81.6364,
+        "aAcc": 97.0229
+      }
+    },
+    {
+      "file": "checkpoints/fold4_best.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": 4,
+      "epoch": 47,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.3278,
+        "Crack_F1": 77.762,
+        "Crack_IoU": 63.6153,
+        "Crack_Precision": 74.8605,
+        "Crack_Recall": 80.8976,
+        "aAcc": 97.1859
+      }
+    },
+    {
+      "file": "checkpoints/uplus_fold4_best.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": 4,
+      "epoch": 40,
+      "ema": false,
+      "metrics": {
+        "mIoU": 80.5837,
+        "Crack_F1": 78.1006,
+        "Crack_IoU": 64.0697,
+        "Crack_Precision": 75.483,
+        "Crack_Recall": 80.9062,
+        "aAcc": 97.2405
+      }
+    },
+    {
+      "file": "checkpoints/het_seg_b2_f4_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 4,
+      "epoch": 59,
+      "ema": true,
+      "metrics": {
+        "mIoU": 79.0744,
+        "Crack_F1": 76.1761,
+        "Crack_IoU": 61.5197,
+        "Crack_Precision": 69.6313,
+        "Crack_Recall": 84.079,
+        "aAcc": 96.8014
+      }
+    },
+    {
+      "file": "checkpoints/seed2_seg_f4_best.pth",
+      "arch": "segformer",
+      "encoder": "mit_b2",
+      "fold": 4,
+      "epoch": 51,
+      "ema": true,
+      "metrics": {
+        "mIoU": 78.7977,
+        "Crack_F1": 75.7685,
+        "Crack_IoU": 60.9898,
+        "Crack_Precision": 69.7955,
+        "Crack_Recall": 82.8595,
+        "aAcc": 96.7766
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_f4_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_tiny",
+      "fold": 4,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 81.1662,
+        "Crack_F1": 78.8171,
+        "Crack_IoU": 65.0398,
+        "Crack_Precision": 78.789,
+        "Crack_Recall": 78.8452,
+        "aAcc": 97.4224
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_small_f4_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 4,
+      "epoch": 44,
+      "ema": true,
+      "metrics": {
+        "mIoU": 81.0733,
+        "Crack_F1": 78.7451,
+        "Crack_IoU": 64.9417,
+        "Crack_Precision": 76.664,
+        "Crack_Recall": 80.9422,
+        "aAcc": 97.3424
+      }
+    },
+    {
+      "file": "checkpoints/seed2_small_f4_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_small",
+      "fold": 4,
+      "epoch": 45,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.4164,
+        "Crack_F1": 77.9887,
+        "Crack_IoU": 63.9192,
+        "Crack_Precision": 71.8735,
+        "Crack_Recall": 85.2412,
+        "aAcc": 97.0735
+      }
+    },
+    {
+      "file": "checkpoints/het_convnext_base_f4_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 4,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.6927,
+        "Crack_F1": 78.297,
+        "Crack_IoU": 64.3344,
+        "Crack_Precision": 74.0635,
+        "Crack_Recall": 83.0438,
+        "aAcc": 97.2
+      }
+    },
+    {
+      "file": "checkpoints/seed2_base_f4_best.pth",
+      "arch": "unet",
+      "encoder": "tu-convnext_base",
+      "fold": 4,
+      "epoch": 46,
+      "ema": true,
+      "metrics": {
+        "mIoU": 80.7644,
+        "Crack_F1": 78.3569,
+        "Crack_IoU": 64.4154,
+        "Crack_Precision": 75.3222,
+        "Crack_Recall": 81.6463,
+        "aAcc": 97.2568
+      }
+    },
+    {
+      "file": "checkpoints/full_unet_r34_s42_final.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    },
+    {
+      "file": "checkpoints/full_unetpp_r34_s42_final.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    },
+    {
+      "file": "checkpoints/full_unet_r50_s42_final.pth",
+      "arch": "unet",
+      "encoder": "resnet50",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    },
+    {
+      "file": "checkpoints/full_unetpp_r50_s42_final.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet50",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    },
+    {
+      "file": "checkpoints/full_unet_r34_s43_final.pth",
+      "arch": "unet",
+      "encoder": "resnet34",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    },
+    {
+      "file": "checkpoints/full_unetpp_r34_s43_final.pth",
+      "arch": "unetplusplus",
+      "encoder": "resnet34",
+      "fold": null,
+      "epoch": 49,
+      "ema": true,
+      "metrics": {}
+    }
+  ],
+  "onnx": [
+    "unet_r34_s42.onnx",
+    "unetpp_r34.onnx",
+    "unet_r50.onnx",
+    "segformer_b2.onnx",
+    "convnext_tiny.onnx",
+    "convnext_small.onnx",
+    "convnext_base.onnx"
+  ]
+}

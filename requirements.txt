@@ -1,0 +1,15 @@
+# Blackwell GPUs (sm_120) need the cu128 index:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1
+torchvision==0.22.1
+numpy
+opencv-python-headless
+pillow
+tqdm
+pyyaml
+albumentations
+segmentation-models-pytorch
+
+# Optional: ONNX export and verification (required for the weight submission)
+onnx
+onnxruntime
