@@ -1,7 +1,7 @@
-# CHD-UNetR34 — 2026 VLP 挑战赛参赛作品
+﻿# CHD-UNetR34 — 2026 VLP 挑战赛参赛作品
 
 UAV-Crack binary crack segmentation. Best leaderboard score: **82.58 mIoU**
-(2026-10-29, rank 3/82).
+(2026-10-29, rank 3/83).
 
 ## Download
 
@@ -67,7 +67,7 @@ mask = (1 / (1 + np.exp(-logits)) > 0.56).astype(np.uint8)
 ```
 
 Exports were verified against PyTorch; the maximum absolute logit difference is
-below 1.7e-5.
+below 1.3e-4.
 
 ## Data licence
 
